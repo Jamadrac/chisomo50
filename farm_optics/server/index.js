@@ -9,12 +9,12 @@ app.use(express.json());
 app.use(authRouter);
 
 const DB =
-  "mongodb+srv://rivaan:test123@cluster0.lcq2qaw.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://rabbi:jamadrac@cluster0.p6m8ftv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 mongoose
   .connect(DB)
   .then(() => {
-    console.log("Connection Successful");
+    console.log(" db Connection Successful");
   })
   .catch((e) => {
     console.log(e);
